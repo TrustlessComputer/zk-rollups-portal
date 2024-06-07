@@ -1,0 +1,88 @@
+[
+  {
+    "network": {
+      "id": 22102,
+      "key": "zkbvml2",
+      "name": "Arcade No Prover",
+      "rpcUrl": "https://rpc.zkbvml2-testnet.trustless.computer",
+      "blockExplorerUrl": "https://explorer.zkbvml2-testnet.trustless.computer",
+      "blockExplorerApi": "https://api.zkbvml2-testnet.trustless.computer",
+      "l1Network": {
+        "id": 22220,
+        "name": "Supersonic",
+        "nativeCurrency": {
+          "name": "BVM Ver2",
+          "symbol": "BVM",
+          "decimals": 18
+        },
+        "rpcUrls": {
+          "default": {
+            "http": ["https://testnet.runechain.com/rpc/"]
+          },
+          "public": {
+            "http": ["https://rpc.testnet.supersonic.bvm.network"]
+          }
+        },
+        "blockExplorers": {
+          "default": {
+            "url": "https://explorer.testnet.supersonic.bvm.network"
+          }
+        }
+      },
+      "logoUrl": "https://storage.googleapis.com/tc-cdn-prod/nbc/icons/arcade-logo"
+    },
+    "tokens": [
+      {
+        "address": "0x000000000000000000000000000000000000800A",
+        "l1Address": "0x0000000000000000000000000000000000000000",
+        "symbol": "BVM",
+        "name": "BVM-Ver2",
+        "decimals": 18,
+        "iconUrl": "/img/bvm-token-icon.svg"
+      }
+    ]
+  },
+  {
+    "network": {
+      "id": 22101,
+      "key": "l2-arcade",
+      "name": "Arcade Prover",
+      "rpcUrl": "https://rpc.testnet.arcade.bvm.network",
+      "blockExplorerUrl": "https://explorer.testnet.arcade.bvm.network",
+      "blockExplorerApi": "https://api.testnet.arcade.bvm.network",
+      "l1Network": {
+        "id": 22220,
+        "name": "Supersonic",
+        "nativeCurrency": {
+          "name": "BVM Ver2",
+          "symbol": "BVM",
+          "decimals": 18
+        },
+        "rpcUrls": {
+          "default": {
+            "http": ["https://testnet.runechain.com/rpc/"]
+          },
+          "public": {
+            "http": ["https://rpc.testnet.supersonic.bvm.network"]
+          }
+        },
+        "blockExplorers": {
+          "default": {
+            "url": "https://explorer.testnet.supersonic.bvm.network"
+          }
+        }
+      },
+      "logoUrl": "https://storage.googleapis.com/tc-cdn-prod/nbc/icons/arcade-logo"
+    },
+    "tokens": [
+      {
+        "address": "0x000000000000000000000000000000000000800A",
+        "l1Address": "0x0000000000000000000000000000000000000000",
+        "symbol": "BVM",
+        "name": "BVM-Ver2",
+        "decimals": 18,
+        "iconUrl": "/img/bvm-token-icon.svg"
+      }
+    ]
+  }
+]
