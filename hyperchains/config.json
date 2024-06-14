@@ -4,9 +4,9 @@
       "id": 22102,
       "key": "zkbvml2",
       "name": "Arcade No Prover",
-      "rpcUrl": "https://rpc.zkbvml2-testnet.trustless.computer",
-      "blockExplorerUrl": "https://explorer.zkbvml2-testnet.trustless.computer",
-      "blockExplorerApi": "https://api.zkbvml2-testnet.trustless.computer",
+      "rpcUrl": "https://rpc.testnet.cryptowars.bvm.network",
+      "blockExplorerUrl": "https://explorer.testnet.cryptowars.bvm.network",
+      "blockExplorerApi": "https://api.testnet.cryptowars.bvm.network",
       "l1Network": {
         "id": 22220,
         "name": "Supersonic",
