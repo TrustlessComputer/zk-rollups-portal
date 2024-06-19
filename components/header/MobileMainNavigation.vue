@@ -11,9 +11,11 @@
             @click="openedTab = 'network'"
           >
             <template #image>
-              <DestinationIconContainer>
+              <!-- <DestinationIconContainer>
                 <IconsEra aria-hidden="true" />
-              </DestinationIconContainer>
+              </DestinationIconContainer> -->
+
+              <img :src="selectedNetwork.logoUrl" class="h-[50px] w-[50px] rounded-full" />
             </template>
           </DestinationItem>
         </CommonCardWithLineButtons>
