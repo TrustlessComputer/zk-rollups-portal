@@ -7,17 +7,19 @@ export type TransactionDestination = {
 export const useDestinationsStore = defineStore("destinations", () => {
   const { l1Network } = storeToRefs(useNetworkStore());
   const { eraNetwork } = storeToRefs(useZkSyncProviderStore());
+  const { selectedNetwork } = storeToRefs(useNetworkStore());
 
   const destinations = computed(() => ({
     era: {
       key: "era",
       label: eraNetwork.value.name,
-      iconUrl: "/img/era.svg",
+      iconUrl: selectedNetwork.value.logoUrl || "",
     },
     ethereum: {
       key: "ethereum",
       label: l1Network.value ? l1Network.value.name : "",
-      iconUrl: "/img/ethereum.svg",
+      // iconUrl: "/img/ethereum.svg",
+      iconUrl: "/img/supersonic_ic.svg",
     },
     layerswap: {
       key: "layerswap",
