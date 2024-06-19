@@ -3,7 +3,8 @@
   "description": "Portal provides Wallet and Bridge functionality",
   "private": true,
   "scripts": {
-    ".": "ts-node --transpile-only scripts/hyperchains/empty-check.ts && cross-env NODE_TYPE=hyperchain npm run dev",
+    "build-deploy": "npm run generate:node:hyperchain && npm run start",
+    "start": "nuxt start",
     "dev": "nuxt dev",
     "dev:node:memory": "cross-env NODE_TYPE=memory npm run dev",
     "dev:node:docker": "cross-env NODE_TYPE=dockerized npm run dev",
