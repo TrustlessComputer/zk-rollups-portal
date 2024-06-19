@@ -33,6 +33,7 @@ export type ZkSyncNetwork = {
   displaySettings?: {
     showPartnerLinks?: boolean;
   };
+  logoUrl?: string;
   getTokens?: () => Token[] | Promise<Token[]>; // If blockExplorerApi is specified, tokens will be fetched from there. Otherwise, this function will be used.
 };
 

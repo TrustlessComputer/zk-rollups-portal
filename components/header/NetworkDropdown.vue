@@ -4,6 +4,7 @@
       <CommonButtonDropdown :toggled="open">
         <template #left-icon>
           <!-- <IconsEra /> -->
+          <img :src="selectedNetwork.logoUrl" class="h-[50px] w-[50px] rounded-full" />
         </template>
         <span>{{ selectedNetwork.name }}</span>
       </CommonButtonDropdown>
@@ -20,7 +21,8 @@
             @click="buttonClicked(item)"
           >
             <template #left-icon>
-              <IconsEra />
+              <!-- <IconsEra /> -->
+              <img :src="item.logoUrl" class="h-[50px] w-[50px] rounded-full" />
             </template>
             <span>{{ item.name }}</span>
             <template #right-icon>
