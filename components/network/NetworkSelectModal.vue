@@ -87,7 +87,6 @@ const displayedGroups = computed(() =>
     .filter((e) => e.destinations.length)
 );
 
-console.log("GGGG displayedGroups ", displayedGroups);
 const selectedNetworkKey = computed({
   get: () => props.networkKey,
   set: (value) => {
