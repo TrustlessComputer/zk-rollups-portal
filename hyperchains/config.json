@@ -1,1 +1,76 @@
-[]
+[
+  {
+    "network": {
+      "id": 22103,
+      "key": "arcade_chain",
+      "name": "Cryptowars",
+      "rpcUrl": "https://rpc.testnet.cryptowars.bvm.network",
+      "blockExplorerUrl": "https://explorer.testnet.cryptowars.bvm.network",
+      "blockExplorerApi": "https://api.testnet.cryptowars.bvm.network",
+      "l1Network": {
+        "id": 22219,
+        "name": "Supersonic",
+        "nativeCurrency": {
+          "name": "BVM",
+          "symbol": "BVM",
+          "decimals": 18
+        },
+        "rpcUrls": {
+          "default": {
+            "http": ["https://rpc.testnet.supersonic2.bvm.network"]
+          },
+          "public": {
+            "http": ["https://rpc.testnet.supersonic2.bvm.network"]
+          }
+        }
+      }
+    },
+    "tokens": [
+      {
+        "address": "0x000000000000000000000000000000000000800A",
+        "l1Address": "0x0000000000000000000000000000000000000000",
+        "symbol": "BVM",
+        "name": "BVM",
+        "decimals": 18,
+        "iconUrl": "/img/eth.svg"
+      }
+    ]
+  },
+  {
+    "network": {
+      "id": 221031,
+      "key": "iron_chain_bank",
+      "name": "IronChainBank",
+      "rpcUrl": "https://rpc.iron-chain-bank.testnet.l2aas.com",
+      "blockExplorerUrl": "https://explorer.iron-chain-bank.testnet.l2aas.com",
+      "blockExplorerApi": "https://api.iron-chain-bank.testnet.l2aas.com",
+      "l1Network": {
+        "id": 22219,
+        "name": "Supersonic",
+        "nativeCurrency": {
+          "name": "BVM",
+          "symbol": "BVM",
+          "decimals": 18
+        },
+        "rpcUrls": {
+          "default": {
+            "http": ["https://rpc.testnet.supersonic2.bvm.network"]
+          },
+          "public": {
+            "http": ["https://rpc.testnet.supersonic2.bvm.network"]
+          }
+        }
+      }
+    },
+    "tokens": [
+      {
+        "address": "0x000000000000000000000000000000000000800A",
+        "l1Address": "0x0000000000000000000000000000000000000000",
+        "symbol": "BVM",
+        "name": "BVM",
+        "decimals": 18,
+        "iconUrl": "/img/eth.svg"
+      }
+    ]
+  }
+]

@@ -5,9 +5,10 @@
 
     <div class="logo-container">
       <NuxtLink :to="{ name: 'bridge' }">
-        <IconsZkSync class="logo-icon" />
+        <!-- <IconsZkSync class="logo-icon" /> -->
+        <SupersonicLogo class="logo-icon-2" />
       </NuxtLink>
-      <span class="beta-label">Beta</span>
+      <!-- <span class="beta-label">Beta</span> -->
     </div>
     <div class="links-container">
       <NuxtLink
@@ -75,6 +76,8 @@ import {
   WalletIcon,
 } from "@heroicons/vue/24/outline";
 
+import SupersonicLogo from "../icons/SupersonicLogo.vue";
+
 const route = useRoute();
 
 const routes = {
@@ -101,6 +104,10 @@ const { selectedColorMode, switchColorMode } = useColorMode();
     .logo-icon {
       @apply h-auto w-full max-w-[140px] sm:max-w-[160px];
     }
+    .logo-icon-2 {
+      @apply max-h-[40px] w-auto;
+    }
+
     .beta-label {
       @apply block rounded-lg bg-neutral-100 p-2 text-xs font-normal uppercase leading-none dark:bg-neutral-900;
     }
