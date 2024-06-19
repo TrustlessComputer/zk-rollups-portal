@@ -10,7 +10,7 @@ import type { Token } from "@/types";
 // };
 
 export const ETH_TOKEN: Token = {
-  address: "0x000000000000000000000000000000000000800A",
+  address: "0x0000000000000000000000000000000000000000",
   l1Address: "0x0000000000000000000000000000000000000000",
   symbol: "BVM",
   name: "BVM",
