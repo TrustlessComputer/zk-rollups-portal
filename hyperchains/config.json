@@ -43,7 +43,7 @@
       "key": "iron_chain_bank",
       "name": "IronChainBank",
       "rpcUrl": "https://rpc.iron-chain-bank.testnet.l2aas.com",
-      "logoUrl": "https://storage.googleapis.com/tc-cdn-prod/nbc/icons/arcade_logo.png",
+      "logoUrl": "https://storage.googleapis.com/tc-cdn-prod/nbc/icons/iron_bank_logo.svg",
       "blockExplorerUrl": "https://explorer.iron-chain-bank.testnet.l2aas.com",
       "blockExplorerApi": "https://api.iron-chain-bank.testnet.l2aas.com",
       "l1Network": {
