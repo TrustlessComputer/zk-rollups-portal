@@ -9,7 +9,7 @@
     <main class="app-layout-main">
       <NuxtPage />
     </main>
-    <Footer />
+    <!-- <Footer /> -->
   </div>
 </template>
 
