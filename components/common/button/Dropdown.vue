@@ -32,7 +32,7 @@ defineProps({
   @apply flex items-center justify-start gap-2;
 
   .left-icon-container {
-    @apply h-6 w-6 flex-shrink-0;
+    @apply h-6 w-6 flex-shrink-0 overflow-hidden rounded-full;
   }
   .right-icon-container {
     @apply ml-auto h-5 w-5 flex-shrink-0;

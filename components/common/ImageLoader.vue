@@ -11,7 +11,13 @@
         </slot>
       </div>
     </transition>
-    <img v-if="src" class="image-loader-image" :class="{ loaded: isReady && !error }" :src="src" :alt="alt" />
+    <img
+      v-if="src"
+      class="image-loader-image rounded-full"
+      :class="{ loaded: isReady && !error }"
+      :src="src"
+      :alt="alt"
+    />
   </div>
 </template>
 
