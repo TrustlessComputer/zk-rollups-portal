@@ -3,7 +3,7 @@
     <MenuButton as="template">
       <CommonButtonDropdown :toggled="open">
         <template #left-icon>
-          <IconsEra />
+          <!-- <IconsEra /> -->
         </template>
         <span>{{ selectedNetwork.name }}</span>
       </CommonButtonDropdown>
