@@ -9,39 +9,42 @@ Portal supports custom ZK Stack Hyperchain nodes.
 There are a few different ways to configure the application:
 
 ### 📁 Configure using ZK Stack configuration files
+
 <details>
-<summary>If you're using ZK Stack, just link your zksync-era repo directory to configure Portal.</summary>
+<summary>If you're using ZK Stack, just link your repo directory to configure Portal.</summary>
 
 1. If you haven't already setup your hyperchain yet, follow the [instructions](https://zkstack.io/quickstart)
 2. Make sure to install the dependencies:
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
 3. 🔄 Pull your hyperchain config files by running:
-    ```bash
-    npm run hyperchain:configure
-    ```
-    This will regenerate `/hyperchains/config.json` file. You can edit this file manually if needed.
+   ```bash
+   npm run hyperchain:configure
+   ```
+   This will regenerate `/hyperchains/config.json` file. You can edit this file manually if needed.
 4. 🚀 Now you can start or build the application. See [Development](#development-server) or [Production](#production) section below for more details.
 </details>
 
 ### 🖊️ Configure automatically with form
+
 <details>
 <summary>Fill out a simple form to configure the application.</summary>
 
 1. Make sure to install the dependencies:
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
 2. 🌟 Follow the instructions in the terminal:
-    ```bash
-    npm run hyperchain:create
-    ```
-    This will regenerate `/hyperchains/config.json` file. You can edit this file manually if needed.
+   ```bash
+   npm run hyperchain:create
+   ```
+   This will regenerate `/hyperchains/config.json` file. You can edit this file manually if needed.
 3. 🚀 Now you can start or build the application. See [Development](#development-server) or [Production](#production) section below for more details.
 </details>
 
 ### ✏️ Configure manually
+
 <details>
 <summary>Manually configure the application by editing the config file.</summary>
 
@@ -62,19 +65,21 @@ Array<{
     name: string;
     blockExplorerUrl?: string; // L2 Block Explorer URL
     hidden?: boolean; // Hidden in the network selector
-    l1Network?: { // @wagmi `Chain` structure https://wagmi.sh/core/chains#build-your-own
+    l1Network?: {
+      // @wagmi `Chain` structure https://wagmi.sh/core/chains#build-your-own
       // minimal required fields shown
       id: number;
       name: string;
       network: string;
       nativeCurrency: { name: string; symbol: string; decimals: number };
       rpcUrls: {
-        default: { http: [ string ] },
-        public: { http: [ string ] }
-      }
+        default: { http: [string] };
+        public: { http: [string] };
+      };
     };
-  },
-  tokens: Array<{ // Should at least contain the `ETH` token (see `/hyperchains/example.config.json` for example)
+  };
+  tokens: Array<{
+    // Should at least contain the `ETH` token (see `/hyperchains/example.config.json` for example)
     address: string;
     l1Address?: string;
     name?: string;
@@ -82,9 +87,10 @@ Array<{
     decimals: number;
     iconUrl?: string;
     price?: number;
-  }>
-}>
+  }>;
+}>;
 ```
+
 </details>
 
 ---
@@ -92,6 +98,7 @@ Array<{
 ## 🛠 Development
 
 ### Advanced configuration
+
 Read more in the main README: [Advanced configuration](../README.md#advanced-configuration)
 
 ### 🔧 Setup
