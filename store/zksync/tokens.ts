@@ -1,6 +1,7 @@
 import { $fetch } from "ofetch";
 
 import { customBridgeTokens } from "@/data/customBridgeTokens";
+import Hyperchains from "@/hyperchains/config.json";
 
 import type { Api, Token } from "@/types";
 
@@ -21,10 +22,14 @@ export const useZkSyncTokensStore = defineStore("zkSyncTokens", () => {
         $fetch(`${eraNetwork.value.blockExplorerApi}/tokens?minLiquidity=0&limit=100&page=2`),
         $fetch(`${eraNetwork.value.blockExplorerApi}/tokens?minLiquidity=0&limit=100&page=3`),
       ]);
+
       const explorerTokens = responses.map((response) => response.items.map(mapApiToken)).flat();
+      const currentNetwork = Hyperchains.find((e) => e.network.id === eraNetwork.value.id);
       const etherExplorerToken = explorerTokens.find((token) => token.address === ETH_TOKEN.address);
       const tokensWithoutEther = explorerTokens.filter((token) => token.address !== ETH_TOKEN.address);
-      return [etherExplorerToken || ETH_TOKEN, ...tokensWithoutEther] as Token[];
+      const result = [etherExplorerToken || ETH_TOKEN, ...tokensWithoutEther, ...(currentNetwork?.tokens || [])] as Token[];
+      console.log("full list of tokens => ", result);
+      return result;
     }
     if (eraNetwork.value.getTokens) {
       return await eraNetwork.value.getTokens();
