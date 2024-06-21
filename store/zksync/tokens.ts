@@ -25,9 +25,20 @@ export const useZkSyncTokensStore = defineStore("zkSyncTokens", () => {
 
       const explorerTokens = responses.map((response) => response.items.map(mapApiToken)).flat();
       const currentNetwork = Hyperchains.find((e) => e.network.id === eraNetwork.value.id);
-      const etherExplorerToken = explorerTokens.find((token) => token.address === ETH_TOKEN.address);
-      const tokensWithoutEther = explorerTokens.filter((token) => token.address !== ETH_TOKEN.address);
-      const result = [etherExplorerToken || ETH_TOKEN, ...tokensWithoutEther, ...(currentNetwork?.tokens || [])] as Token[];
+      const listTokens: Token[] = [...explorerTokens];
+      if (currentNetwork && currentNetwork.tokens.length !== 0) {
+        currentNetwork.tokens.forEach((token) => {
+            if (!listTokens.find((t) => t.l1Address === token.l1Address)) {
+                listTokens.push(token as Token);
+            }
+        });
+      }
+
+      const etherExplorerToken = listTokens.find((token) => token.address === ETH_TOKEN.address);
+      const tokensWithoutEther = listTokens.filter((token) => token.address !== ETH_TOKEN.address);
+      
+
+      const result = [etherExplorerToken || ETH_TOKEN, ...tokensWithoutEther] as Token[];
       console.log("full list of tokens => ", result);
       return result;
     }

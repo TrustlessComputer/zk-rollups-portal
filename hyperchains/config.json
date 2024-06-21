@@ -1,15 +1,15 @@
 [
   {
     "network": {
-      "id": 22103,
-      "key": "arcade_chain",
-      "name": "Cryptowars",
-      "rpcUrl": "https://rpc.testnet.cryptowars.bvm.network",
-      "logoUrl": "https://storage.googleapis.com/tc-cdn-prod/nbc/icons/cryptowars_logo.png",
-      "blockExplorerUrl": "https://explorer.testnet.cryptowars.bvm.network",
-      "blockExplorerApi": "https://api.testnet.cryptowars.bvm.network",
+      "id": 37389,
+      "key": "iron-chain-bank",
+      "name": "IronChainBank",
+      "rpcUrl": "https://rpc.iron-chain-bank.l2aas.com",
+      "blockExplorerUrl": "https://explorer.iron-chain-bank.l2aas.com",
+      "blockExplorerApi": "https://api.iron-chain-bank.l2aas.com",
+      "logoUrl": "https://storage.googleapis.com/tc-cdn-prod/nbc/icons/iron_bank_logo.svg",
       "l1Network": {
-        "id": 22219,
+        "id": 222150,
         "name": "Supersonic",
         "nativeCurrency": {
           "name": "BVM",
@@ -18,36 +18,56 @@
         },
         "rpcUrls": {
           "default": {
-            "http": ["https://rpc.testnet.supersonic2.bvm.network"]
+            "http": [
+              "https://rpc.supersonic.bvm.network"
+            ]
           },
           "public": {
-            "http": ["https://rpc.testnet.supersonic2.bvm.network"]
+            "http": [
+              "https://rpc.supersonic.bvm.network"
+            ]
           }
         }
       }
     },
     "tokens": [
       {
-        "address": "0x0000000000000000000000000000000000000000",
+        "address": "0x000000000000000000000000000000000000800A",
         "l1Address": "0x0000000000000000000000000000000000000000",
         "symbol": "BVM",
         "name": "BVM",
         "decimals": 18,
-        "iconUrl": "/img/eth.svg"
+        "iconUrl": "/img/bvm_token_ic.svg"
+      },
+      {
+        "address": null,
+        "l1Address": "0xd2428680bD6fF0Cc34e05d148eB2Fe5d7c9f8c16",
+        "symbol": "WETH",
+        "name": "WETH",
+        "decimals": 18,
+        "iconUrl": "/img/ethereum.svg"
+      },
+      {
+        "address": null,
+        "l1Address": "0xf806d17bC3a48C075a142dE2322F15522Ac4cE87",
+        "symbol": "BTC",
+        "name": "Bitcoin",
+        "decimals": 18,
+        "iconUrl": "/img/bitcoin.svg"
       }
     ]
   },
   {
     "network": {
-      "id": 221031,
-      "key": "iron_chain_bank",
-      "name": "IronChainBank",
-      "rpcUrl": "https://rpc.iron-chain-bank.testnet.l2aas.com",
-      "logoUrl": "https://storage.googleapis.com/tc-cdn-prod/nbc/icons/iron_bank_logo.svg",
-      "blockExplorerUrl": "https://explorer.iron-chain-bank.testnet.l2aas.com",
-      "blockExplorerApi": "https://api.iron-chain-bank.testnet.l2aas.com",
+      "id": 99444,
+      "key": "zk-octopus-chain",
+      "name": "Octopus Chain",
+      "rpcUrl": "https://rpc.zk-octopus-chain.l2aas.com",
+      "blockExplorerUrl": "https://explorer.zk-octopus-chain.l2aas.com",
+      "blockExplorerApi": "https://api.zk-octopus-chain.l2aas.com",
+      "logoUrl": "https://portal.supersonic.bvm.network/img/supersonic_ic.svg",
       "l1Network": {
-        "id": 22219,
+        "id": 222150,
         "name": "Supersonic",
         "nativeCurrency": {
           "name": "BVM",
@@ -56,22 +76,42 @@
         },
         "rpcUrls": {
           "default": {
-            "http": ["https://rpc.testnet.supersonic2.bvm.network"]
+            "http": [
+              "https://rpc.supersonic.bvm.network"
+            ]
           },
           "public": {
-            "http": ["https://rpc.testnet.supersonic2.bvm.network"]
+            "http": [
+              "https://rpc.supersonic.bvm.network"
+            ]
           }
         }
       }
     },
     "tokens": [
       {
-        "address": "0x0000000000000000000000000000000000000000",
+        "address": "0x000000000000000000000000000000000000800A",
         "l1Address": "0x0000000000000000000000000000000000000000",
         "symbol": "BVM",
         "name": "BVM",
         "decimals": 18,
-        "iconUrl": "/img/eth.svg"
+        "iconUrl": "/img/bvm_token_ic.svg"
+      },
+      {
+        "address": null,
+        "l1Address": "0xd2428680bD6fF0Cc34e05d148eB2Fe5d7c9f8c16",
+        "symbol": "WETH",
+        "name": "WETH",
+        "decimals": 18,
+        "iconUrl": "/img/ethereum.svg"
+      },
+      {
+        "address": null,
+        "l1Address": "0xf806d17bC3a48C075a142dE2322F15522Ac4cE87",
+        "symbol": "BTC",
+        "name": "Bitcoin",
+        "decimals": 18,
+        "iconUrl": "/img/bitcoin.svg"
       }
     ]
   }
